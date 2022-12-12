@@ -56,7 +56,7 @@ class FloydWarshalls
         }
     }
 }
-class ch{
+class floyd{
 	public static final int INFINITY = 999;
 
     public static void main(String... arg)
