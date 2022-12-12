@@ -38,7 +38,7 @@ class FloydWarshalls
     }
 
     //Display Graph
-    public void printGraph(int adjMatrix[][])
+    public void printPath(int adjMatrix[][])
     {
         for(int i = 1; i <= numOfVertices; i++)
         {
@@ -92,7 +92,7 @@ class floyd{
                         }
                     }
                 }
-                //Show the Weighted Graph
+                //Sanity Check
                 /*
                 System.out.println("Weighted Graph:");
                 for(int i = 1; i <= numOfVertices; i++)
@@ -107,7 +107,7 @@ class floyd{
                 startTime = System.nanoTime();
                 FloydWarshalls run = new FloydWarshalls(numOfVertices);
                 run.floydAlgo(adjMatrix);
-                //run.printGraph(adjMatrix);
+                //run.printPath(adjMatrix);
                 endTime = System.nanoTime();
                 totalTime += endTime - startTime;
 			}
